@@ -1,0 +1,102 @@
+.goal-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 97%;
+}
+
+.goal-item input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+.goal-item span {
+  flex-grow: 1;
+  margin-right: 8px;
+}
+
+.goal-item button {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.goal-item button:hover {
+  background-color: #d32f2f;
+}
+
+.goal-item.completed {
+  border-color: #4caf50; /* Cambia el color del borde para tareas completadas */
+  background-color: #e8f5e9; /* Cambia el color de fondo para tareas completadas */
+  width: 97%;
+}
+
+
+/* Estilos para la barra de progreso */
+progress {
+  width: 100%;
+  margin-bottom: 8px;
+}
+
+/* Estilos para el mensaje de progreso */
+span {
+  display: block;
+  margin-bottom: 8px;
+}
+.goal-item input[type="checkbox"]:checked + span {
+  text-decoration: line-through;
+  color: blue; /* Cambia el color de la línea completada */
+}
+.goal-item input[type="checkbox"]:checked{
+  background-color: blue;
+}
+/* Estilo personalizado para el chulito de la tarea completada */
+.goal-item input[type="checkbox"] {
+  -webkit-appearance: none; /* Oculta el chulito en navegadores webkit */
+  -moz-appearance: none; /* Oculta el chulito en navegadores mozilla */
+  appearance: none; /* Oculta el chulito */
+  width: 20px; /* Ajusta el tamaño del área del checkbox */
+  height: 20px; /* Ajusta el tamaño del área del checkbox */
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  position: relative;
+  outline: none; /* Elimina el contorno por defecto */
+  cursor: pointer;
+}
+
+.goal-item input[type="checkbox"]::before {
+  content: '\2713'; /* Código Unicode para el checkmark (✔) */
+  display: block;
+  font-size: 16px; /* Tamaño del checkmark */
+  color: transparent; /* Color transparente para ocultar el checkmark por defecto */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.goal-item input[type="checkbox"]:checked::before {
+  color: #4caf50; /* Cambia el color del checkmark cuando está marcado */
+}
+/* En tu archivo de estilos CSS */
+
+/* Estilos para el modal de confirmación */
+.delete-confirmation {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: gray;
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.delete-confirmation button {
+  margin-right: 10px;
+}

@@ -1,0 +1,28 @@
+/* BtnChangeTheme.css */
+
+/* BtnChangeTheme.css */
+
+/* Estilos para el contenedor que simula el botón */
+.change-theme-btn {
+  display: inline-block; /* Asegura que el contenedor se comporte como un bloque */
+  cursor: pointer; /* Cambia el cursor al pasar por encima */
+  font-size: 16px; /* Tamaño del icono (ajustar según sea necesario) */
+  width: 24px; /* Ancho del contenedor (ajustar según sea necesario) */
+  height: 24px;
+  position: fixed;
+  top: 20px; /* Ajusta la distancia desde la parte superior */
+  right: 20px;
+}
+
+/* Estilos para los íconos */
+.change-theme-btn svg {
+  width: 100%; /* Ajusta el ancho del ícono al 100% del contenedor */
+  height: 100%; /* Ajusta la altura del ícono al 100% del contenedor */
+}
+
+.icon-img {
+  width: 30px; /* Ancho deseado */
+  height: 30px; /* Alto deseado */
+  /* Otros estilos */
+}
+

@@ -1,0 +1,81 @@
+/* Estilos para el componente App */
+.app-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  border: 3px solid gray;
+  margin-top: 5%;
+}
+
+h1,h2 {
+  text-align: center;
+  
+}
+
+/* Estilos para tema oscuro a nivel global */
+body.dark-theme {
+  /* Define estilos para el tema oscuro */
+  background-color: #1f1f1f;
+  color: #ffffff;
+  /* ... Otros estilos ... */
+}
+
+/* Estilos para tema claro a nivel global */
+body.light-theme {
+  /* Define estilos para el tema claro */
+  background-color: #ffffff;
+  color: #333333;
+  /* ... Otros estilos ... */
+}
+
+.goal-form {
+  text-align: center;
+}
+
+.goal-input {
+  width: 80%;
+  padding: 8px;
+  margin: 8px auto;
+  display: block;
+}
+input[type="text"] {
+  width: 80%; /* Ajusta el ancho según tus necesidades */
+  padding: 8px;
+  margin: 8px auto;
+  display: block;
+}
+.meta{
+  width: 84%;
+  cursor: pointer;
+  background-color: blue;
+  padding: 8px;
+  margin: 8px auto;
+}
+
+.mensaje {
+  font-style: italic;
+  font-weight: bold;
+  text-align: center;
+  font-size: 18px;
+  text-transform: uppercase;
+  border: 2px solid #4caf50; /* Borde alrededor del texto */
+  background: linear-gradient(45deg, #4caf50, #81c784); /* Fondo de gradiente */
+  padding: 10px; /* Espaciado interno */
+  border-radius: 4px; /* Bordes redondeados */
+}
+.mensaje::before {
+  content: '🎉'; /* Icono de celebración */
+  margin-right: 5px; /* Espaciado entre el icono y el texto */
+  font-size: 24px; /* Tamaño del icono */
+  animation: pulse 1.5s infinite; /* Pulso intermitente */
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
